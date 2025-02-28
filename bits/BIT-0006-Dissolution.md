@@ -1,56 +1,50 @@
-# BIT-0000: Title of BIT
+# BIT-0000: Council Dissolution of dTAO Subnet
 
-- **BIT Number:** 0000
-- **Title:** Title of the BIT
-- **Author(s):** [Name(s) and contact information]
-- **Discussions-to:** [URL for discussion thread]
+- **BIT Number:** 0006
+- **Title:** Council Dissolution of dTAO Subnet
+- **Author(s):** CapriciousSage
 - **Status:** Draft
-- **Type:** Core | Subtensor | Networking | Interface | Meta | Informational
-- **Created:** [Date]
-- **Updated:** [Date]
-- **Requires:** [BIT number(s) if applicable]
-- **Replaces:** [BIT number(s) if applicable]
+- **Type:** Core
+- **Created:** 28/02/2025
+- **Updated:** 28/02/2025
 
 ## Abstract
 
-A short (~200 words) description of the issue being addressed and the proposed solution.
+Introduction of emergency/last resort governance powers to the Root Network Validator Council to dissolve a dTAO Subnet to avoid network/systemic risk 
 
 ## Motivation
 
-The motivation section should clearly explain why the existing protocol specification is
-inadequate to address the problem that the BIT solves. This is critical for BITs that want to
-change the Bittensor protocol. It should clearly explain why the solution outlined in the BIT
-is beneficial to the Bittensor ecosystem.
+While the "lolocaust" has been an effective way of dealing with unwanted/dangerous subnet economics (ponzi), it does not allow for the removal of unwanted/dangerous subnets themselves (malware, CSAM, other illicit content, etc). As such, a mechanism to remove subnets that present a significant risk to the broader ecosystem is required.
 
 ## Specification
 
-The technical specification should describe the syntax and semantics of any new feature or
-proposed change. The specification should be detailed enough to allow for implementation
-without needing to interpret the proposal’s intent.
+- Addition of new governance capabilities to allow for senate members to create and vote on proposals that, should the proposal pass by a super-majority, will automatically dissolve a dTAO-subnet.
+- Dissolution process would also need to include the forced fire-sale of outstanding dtao tokens back to TAO utalising the existing pool liquidity.
+  -- It is vital that the dtao fire-sale all done at the same price, completed in a manner that equalises the price impact among all eligible participants.
+  -- The applicable dTAO tokens in the subnet owner's wallet should be excluded from this fire-sale process ('burnt')
+- To prevent bad actors from 'rugging' the subnet during the governance window, certain activities on the subnet should be frozen once the governance proposal is submitted
+  -- These include the LP (preventing buying/selling), token issueance (miner/vali/subnet owner rewards), and miner/vali registrations).
+- To avoid abuse (unwarranted dissolution proposals), the governance proposer should be required to lock an amount of tao equal to the registration cost of the subnet.
+- Due to the lack of a "No with Veto" mechanic, voting results would need to accommoate three outcomes (Yes/Split Vote/No
+  -- Yes (66% Super Majority in support): Subnet is dissolved, locked tokens returned to proposer 
+  -- Split Vote (34% - 65% in support): Subnet is not dissolved, locked tokens returned to proposer
+  -- No (33% or less in support): Subnet is not dissolved, locked tokens are recycled
 
 ## Rationale
 
-This section describes why particular design decisions were made. It should address alternative
-designs and why they were not chosen, and should discuss the potential impact of the proposal
-on the existing system.
+Subnets being used to distribute malicious or illicit material (malware, CSAM, etc) pose an exestensial risk to the entire network. It is vital that the network have a manner in which to remove these threats. Additionally, should certain subnets become abandoned, it may be necessary to remove these abandoned subnets to reduce unneccessary chain bloat/overhead.
 
 ## Backwards Compatibility
 
-All BITs that introduce backward incompatibilities must include a section describing these
-incompatibilities and their severity. The BIT must explain how the author proposes to deal with
-these incompatibilities. BIT submissions without a sufficient backward compatibility treatise
-may be rejected outright.
+It is unknown whether the introduction of additional capabilities to the governance module (including integrating with locking tokens when submitting a dissolution proposal) may have backwards compatiblity issues with the existing governance framework.
 
 ## Reference Implementation (Optional)
 
-If applicable, include a link to a reference implementation that demonstrates the feasibility
-of the proposal. This implementation may be partial or fully complete.
+The Cosmos SDK provides a well known example of governance proposals requiring a deposit, which is then burnt in the event of a "No with Veto" outcome
 
 ## Security Considerations
 
-All BITs should consider the security implications of their proposals. This section should
-address potential attack vectors, vulnerabilities, and how the proposed changes affect the
-overall security of the Bittensor protocol.
+The existance of a dissolution procedure is not a panacea against abuse. Senate members may have vested interests (or lack of interest in voting) that may prevent the successful dissolution of a subnet where it may be otherwise needed. However, this is always a risk in any decentralised ecosystem and relies on network participants showing wisdom in selecting which validator to delegate to.  
 
 ## Copyright
 
