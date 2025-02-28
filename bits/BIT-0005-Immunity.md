@@ -1,6 +1,6 @@
 # BIT-0000: dTAO Subnet Immunity Window
 
-- **BIT Number:** 0000
+- **BIT Number:** 0005
 - **Title:** dTAO Subnet Immunity Window
 - **Author(s):** CapriciousSage
 - **Status:** Draft
