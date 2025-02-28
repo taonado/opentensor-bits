@@ -1,4 +1,4 @@
-# BIT-0000: Title of BIT
+# BIT-0000: dTAO Subnet Immunity Window
 
 - **BIT Number:** 0000
 - **Title:** dTAO Subnet Immunity Window
