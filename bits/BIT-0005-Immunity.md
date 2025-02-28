@@ -1,56 +1,45 @@
 # BIT-0000: Title of BIT
 
 - **BIT Number:** 0000
-- **Title:** Title of the BIT
-- **Author(s):** [Name(s) and contact information]
-- **Discussions-to:** [URL for discussion thread]
+- **Title:** dTAO Subnet Immunity Window
+- **Author(s):** CapriciousSage
 - **Status:** Draft
-- **Type:** Core | Subtensor | Networking | Interface | Meta | Informational
-- **Created:** [Date]
-- **Updated:** [Date]
-- **Requires:** [BIT number(s) if applicable]
-- **Replaces:** [BIT number(s) if applicable]
+- **Type:** Core
+- **Created:** 28/02/2025
 
 ## Abstract
 
-A short (~200 words) description of the issue being addressed and the proposed solution.
+Introduce the dTAO equivalent of the "pre-dtao" 7-day immunity period. Have pool locked and inflation paused for the first 7 days of new subnet registration to allow the subnet owner a chance to get things ready without miners and validators exploiting the subnet for dtao tokens.
 
 ## Motivation
 
-The motivation section should clearly explain why the existing protocol specification is
-inadequate to address the problem that the BIT solves. This is critical for BITs that want to
-change the Bittensor protocol. It should clearly explain why the solution outlined in the BIT
-is beneficial to the Bittensor ecosystem.
+Pre-dtao, new subnets experienced a 7-day immunity period, which allowed a subnet owner to verify the discord channel, publish their repo, onboard valis and miners, and 'get things rolling' - all without pressure of deregistration and without any real money on the table.
+
+Sadly, dTAO lacks this functionallity, and instead creatives an incentive to 'rush' new subnets with bogus validator or mining code to try and establish early vtrust and child hotkey delegations. This not muddies the early token supply (causing undue market damage) but also undermines the subnet owner's attempts to launch the subnet correctly.
+
+By allowing a similar 7-day window, Subnet onwers get a chance to establish themselves without being pushed around in their own network, and network participants get 7 days to evaliate "do I want to mine, validate or buy this token" (minimising the chances of getting rekt on a rugnet/ponzi). It also ensures that subnet owners know they are "on the clock" and only have 7-days to get their act together.
 
 ## Specification
 
-The technical specification should describe the syntax and semantics of any new feature or
-proposed change. The specification should be detailed enough to allow for implementation
-without needing to interpret the proposal’s intent.
+Option 1 (Clean): All new subnets automatically enter a 7-day "immunity period" where the LP is locked, with no tao/dtao added and no trading possible, and no dtao Token Emissions. Validators and miners can register, build vtrust/trust, but no emissions or dividends are paid out (disincentivising running "arbitrary weights" code). After 50,400 blocks, the ball starts rolling automatically.
+
+Option 2 (Clunky): Alternatively, just start all new subnets with registration disabled. This is an easier technical solution but has other problems.
 
 ## Rationale
 
-This section describes why particular design decisions were made. It should address alternative
-designs and why they were not chosen, and should discuss the potential impact of the proposal
-on the existing system.
+Every single new subnet launched since dTAO has seen it's dtao token exploited by validators and miners running fake/arbitrary code (not supplied by the subnet owner). As network participants are also attempting to 'fomo' into these new subnets based on rumours of what they might be, this has allowed the exploiters to use retail as exit liquidity (or gain an unfair advantage in the new subnet prior to its practical-launch with a proper repo).
 
 ## Backwards Compatibility
 
-All BITs that introduce backward incompatibilities must include a section describing these
-incompatibilities and their severity. The BIT must explain how the author proposes to deal with
-these incompatibilities. BIT submissions without a sufficient backward compatibility treatise
-may be rejected outright.
+While not a backwards compatibility issue specifically, dTAO subnets that go live prior to the implementation of this BIT should consider manually implementing "option 2" (disabling registrations on their SN) as a temporary work-around until they're ready to launch their repo to avoid being gamed.
 
 ## Reference Implementation (Optional)
 
-If applicable, include a link to a reference implementation that demonstrates the feasibility
-of the proposal. This implementation may be partial or fully complete.
+N/A
 
 ## Security Considerations
 
-All BITs should consider the security implications of their proposals. This section should
-address potential attack vectors, vulnerabilities, and how the proposed changes affect the
-overall security of the Bittensor protocol.
+The 7-day window does not guarantee that the subnet will be ready by the end of the 7-days, so gaming/exploiting may still occur, but at the very least it gives the subnet owner a fighting chance with a reasonable timeframe to get ahead of the problem
 
 ## Copyright
 
