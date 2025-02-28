@@ -14,7 +14,7 @@ Introduction of emergency/last resort governance powers to the Root Network Vali
 
 ## Motivation
 
-While the "lolocaust" has been an effective way of dealing with unwanted/dangerous subnet economics (ponzi), it does not allow for the removal of unwanted/dangerous subnets themselves (malware, CSAM, other illicit content, etc). As such, a mechanism to remove subnets that present a significant risk to the broader ecosystem is required.
+While the "lolocaust" (SN28 consensus change to incentivise dumping the token) has been an effective way of dealing with unwanted/dangerous subnet economics (ponzi), it does not allow for the removal of unwanted/dangerous subnets themselves (malware, CSAM, other illicit content, etc). As such, a mechanism to remove subnets that present a significant risk to the broader ecosystem is required.
 
 ## Specification
 
