@@ -1,4 +1,4 @@
-# BIT-0000: Council Dissolution of dTAO Subnet
+# BIT-0006: Council Dissolution of dTAO Subnet
 
 - **BIT Number:** 0006
 - **Title:** Council Dissolution of dTAO Subnet
