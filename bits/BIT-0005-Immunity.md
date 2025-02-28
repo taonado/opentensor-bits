@@ -16,9 +16,9 @@ Introduce the dTAO equivalent of the "pre-dtao" 7-day immunity period. Have pool
 
 Pre-dtao, new subnets experienced a 7-day immunity period, which allowed a subnet owner to verify the discord channel, publish their repo, onboard valis and miners, and 'get things rolling' - all without pressure of deregistration and without any real money on the table.
 
-Sadly, dTAO lacks this functionallity, and instead creatives an incentive to 'rush' new subnets with bogus validator or mining code to try and establish early vtrust and child hotkey delegations. This not muddies the early token supply (causing undue market damage) but also undermines the subnet owner's attempts to launch the subnet correctly.
+Sadly, dTAO lacks this functionality, and instead creatives an incentive to 'rush' new subnets with bogus validator or mining code to try and establish early vtrust and child hotkey delegations. This not only muddies the early token supply (causing undue market damage) but also undermines the subnet owner's attempts to launch the subnet correctly.
 
-By allowing a similar 7-day window, Subnet onwers get a chance to establish themselves without being pushed around in their own network, and network participants get 7 days to evaliate "do I want to mine, validate or buy this token" (minimising the chances of getting rekt on a rugnet/ponzi). It also ensures that subnet owners know they are "on the clock" and only have 7-days to get their act together.
+By allowing a similar 7-day window, Subnet owners get a chance to establish themselves without being pushed around in their own network, and network participants get 7 days to evaluate "do I want to mine, validate or buy this token" (minimising the chances of getting rekt on a rugnet/ponzi). It also ensures that subnet owners know they are "on the clock" and only have 7-days to get their act together.
 
 ## Specification
 
