@@ -3,7 +3,7 @@
 - **BIT Number:** 0005
 - **Title:** dTAO Subnet Start Call
 - **Author(s):** CapriciousSage, Rhef, Vune
-- **Status:** Draft
+- **Status:** Final
 - **Type:** Core
 - **Created:** 28/02/2025
 - **Updated:** 05/03/2025
