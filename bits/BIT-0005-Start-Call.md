@@ -1,12 +1,12 @@
 # BIT-0005: dTAO Subnet Start Call Function
 
 - **BIT Number:** 0005
-- **Title:** dTAO Subnet Immunity Window
+- **Title:** dTAO Subnet Start Call
 - **Author(s):** CapriciousSage, Rhef, Vune
 - **Status:** Draft
 - **Type:** Core
 - **Created:** 28/02/2025
-- **Updated:** 28/02/2025
+- **Updated:** 05/03/2025
 
 ## Abstract
 
