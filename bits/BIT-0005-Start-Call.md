@@ -10,7 +10,7 @@
 
 ## Abstract
 
-Introduce a "Start Call" function to all new subnets. Once a new subnet is registered, UID registrations would be disabled by default and subnet epoch/emissions do not start (pool locked, inflation paused) until the Subnet Owner executes both the start call function (which unlocks the pool, starts inflation, and enables registrations).
+Introduce a "Start Call" function to all new subnets and change the default registration toggle to `False`. Once a new subnet is registered, UID registrations would be disabled by default and subnet epoch/emissions do not start (pool locked, inflation paused) until the Subnet Owner executes both the start call function (which unlocks the pool, starts inflation, and enables registrations).
 
 ## Motivation
 
@@ -25,6 +25,8 @@ By allowing subnet owners to control when the subnet "starts", Subnet owners get
 When new subnets are registered, they are effectively dormant. No tao/dtao added and no trading possible, no dtao Token Emissions, and no UID registrations.
 
 When the subnet owner is ready to initialise the subnet, they execute the "start call" function (similar to Parachain), which enables UID registrations, unlocks the LP (allowing trading), and starts epoch/emissions.
+
+NOTE: Subnet owners should be able to enable UID registrations prior to/without executing the "start call" to give validators and miners an opportunity to register and deploy "real code" before the wheels start turning. 
 
 ## Rationale
 
