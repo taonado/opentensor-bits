@@ -10,7 +10,7 @@
 
 ## Abstract
 
-Introduce a "Start Call" function to all new subnets and change the default registration toggle to `False`. Once a new subnet is registered, UID registrations would be disabled by default and subnet epoch/emissions do not start (pool locked, inflation paused) until the Subnet Owner executes both the start call function (which unlocks the pool, starts inflation, and enables registrations).
+Introduce a "Start Call" function to all new subnets and change the default registration toggle to `False`. Once a new subnet is registered, UID registrations would be disabled by default and subnet epoch/emissions do not start (pool locked, inflation paused) until the Subnet Owner executes both the start call function (which unlocks the pool, starts inflation, and - optionally - enables registrations).
 
 ## Motivation
 
