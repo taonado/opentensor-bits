@@ -26,7 +26,7 @@ When new subnets are registered, they are effectively dormant. No tao/dtao added
 
 When the subnet owner is ready to initialise the subnet, they execute the "start call" function (similar to Parachain), which enables UID registrations, unlocks the LP (allowing trading), and starts epoch/emissions.
 
-NOTE: Subnet owners should be able to enable UID registrations prior to/without executing the "start call" to give validators and miners an opportunity to register and deploy "real code" before the wheels start turning. 
+NOTE: Subnet owners should be able to enable UID registrations prior to/without executing the "start call" to give validators and miners an opportunity to register and deploy "real code" before the wheels start turning, however there would be a function to enable both things at once.
 
 ## Rationale
 
