@@ -49,7 +49,7 @@ This BIT does not propose to re-invent the wheel, but merely install an existing
 ## Backwards Compatibility
 
 Since this BIT does not replace or improve any existing offical wTAO contract, it is net-new.
-Existing applications which use one of the already deployed wTAO contracts may need to be updated, here is a [reference implementation](https://github.com/taonado/taonado-cash/blob/da6f4c4a551a072e4ffcc3223e85a8f4587e7147/contracts/weights.sol#L27)
+Existing applications which use one of the already deployed wTAO contracts may need to be updated, here is a [reference implementation](https://github.com/taonado/taonado-cash/blob/da6f4c4a551a072e4ffcc3223e85a8f4587e7147/contracts/weights.sol#L27).
 Any TAO deposited to these existing wTAO implementations can be easily unwrapped and re-wrapped with the official contract.
 
 ## Security Considerations
